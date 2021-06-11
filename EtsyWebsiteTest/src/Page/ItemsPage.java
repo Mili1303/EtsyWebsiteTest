@@ -52,22 +52,6 @@ public class ItemsPage {
 		return this.getFavorite().get(0);
 	}
 	
-	public WebElement getSecondFavorite() {
-		WebElement second = this.getFavorite().get(0);
-		for (int i = 0; i < this.getFavorite().size(); i++) {
-			second = this.getFavorite().get(2);
-		}
-		return second;
-	}
-	
-	public WebElement getThirdFavorite() {
-		WebElement third = this.getFavorite().get(0);
-		for (int i = 0; i < this.getFavorite().size(); i++) {
-			third = this.getFavorite().get(3);
-		}
-		return third;
-	}
-	
 	public WebElement getAddToList() {
 		return this.driver.findElement(addToList);
 	}
