@@ -202,7 +202,7 @@ public class EtsyTest {
 
 //		Set the color by clicking on the "Blue" checkbox in the "Color" section and click the button "Apply"
 		((JavascriptExecutor) driver).executeScript("arguments[0].scrollIntoView();",
-				this.driver.findElement(this.page.scrollTill2));
+				this.driver.findElement(this.filter.blue));
 		Thread.sleep(1000);
 
 		this.actions.moveToElement(this.filter.getBlue());
@@ -212,7 +212,7 @@ public class EtsyTest {
 
 //		Set the material by clicking on the "Porcelain" checkbox in the "Material" section
 		((JavascriptExecutor) driver).executeScript("arguments[0].scrollIntoView();",
-				this.driver.findElement(this.page.scrollTill1));
+				this.driver.findElement(this.filter.material));
 		Thread.sleep(1000);
 
 		this.actions.moveToElement(this.filter.getMaterial());
@@ -222,7 +222,7 @@ public class EtsyTest {
 
 //		Set the Holiday by clicking on the "Easter" checkbox in the "Holiday" section
 		((JavascriptExecutor) driver).executeScript("arguments[0].scrollIntoView();",
-				this.driver.findElement(this.page.scrollTill3));
+				this.driver.findElement(this.filter.holiday));
 		Thread.sleep(1000);
 
 		this.actions.moveToElement(this.filter.getHoliday());
