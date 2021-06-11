@@ -13,8 +13,8 @@ public class FilterPage {
 	public By showMore = By.xpath("//*[@aria-label='Show more']");
 	public By allFilters = By.id("search-filter-button");
 	public By blue = By.id("attr_1-2");
-	public By material = By.xpath("//div[@class=\"main-filters\"]/fieldset[1]/div/div/div[5]/div");
-	public By holiday = By.xpath("//div[@class=\"main-filters\"]/fieldset[4]/div/div/div[2]/div");
+	public By material = By.id("attr_357-215");
+	public By holiday = By.id("attr_4-37");
 	public By shipping = By.name("ship_to");
 	public By apply = By.xpath("//*[@aria-label='Apply']");
 	public By freeShip = By.id("special-offers-free-shipping");
