@@ -61,8 +61,8 @@ public class EtsyTest {
 		item = new ItemsPage(driver);
 	}
 
-//	@Test
-	public void registrationTest() throws InterruptedException {
+	@Test
+	public void registrationTestId1() throws InterruptedException {
 
 //		Find the button "Sign in" in the upper right corner and click on it
 		this.signIn.clickSignIn();
@@ -106,7 +106,7 @@ public class EtsyTest {
 	}
 
 	@Test
-	public void loginTest() throws InterruptedException {
+	public void loginTestId3() throws InterruptedException {
 
 //		Find the button "Sign in" in the upper right corner and click on it
 		this.signIn.clickSignIn();
@@ -138,7 +138,7 @@ public class EtsyTest {
 
 	}
 
-//	@Test
+	@Test
 	public void testId4() throws InterruptedException {
 
 //		Find the "Art & Collectibles" part on the timeline and hover it with a mouse																			
@@ -254,7 +254,7 @@ public class EtsyTest {
 		this.category.getXSearch().click();
 	}
 
-//	@Test
+	@Test
 	public void testId6() throws InterruptedException {
 
 //		Find the "Jewelry & Accessories" and hover it with a mouse
@@ -293,7 +293,7 @@ public class EtsyTest {
 		Thread.sleep(1000);
 	}
 
-//	@Test
+	@Test
 	public void testId9() throws InterruptedException {
 
 //		Hover the "Toys & Entertainment" with a mouse and from "Movies & Music" choose "Musical Insrtuments"
