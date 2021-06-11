@@ -8,9 +8,6 @@ public class ReviewPage {
 	private WebDriver driver;
 	public By scrollTill = By.xpath("//nav[@aria-label='Review Page Results']");
 	public By page2 = By.xpath("//nav[@aria-label='Review Page Results']/ul/li[3]");
-	public By scrollTill1 = By.partialLinkText("Material");
-	public By scrollTill2 = By.partialLinkText("Color");
-	public By scrollTill3 = By.partialLinkText("Holiday");
 	
 	public ReviewPage(WebDriver driver) {
 		this.driver = driver;
