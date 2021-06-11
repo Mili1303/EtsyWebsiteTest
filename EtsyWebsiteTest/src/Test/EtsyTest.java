@@ -326,35 +326,6 @@ public class EtsyTest {
 		this.item.getFirstFavorite().click();
 		Thread.sleep(2000);
 
-//		Click on the white heart on the second and third item photo
-		// second item
-		Assert.assertTrue(existElements(driver, this.item.pianoPhoto), "First piano photo doesn't exist.");
-		this.actions.moveToElement(this.item.getSecondPianoPhoto()).build().perform();
-		Thread.sleep(1000);
-
-		waiter.until(ExpectedConditions.visibilityOf(this.item.getSecondFavorite()));
-
-		heart = this.item.getSecondFavorite().isDisplayed();
-		Assert.assertTrue(heart);
-		Thread.sleep(1000);
-
-		this.item.getSecondFavorite().click();
-		Thread.sleep(2000);
-
-		// third item
-		Assert.assertTrue(existElements(driver, this.item.pianoPhoto), "First piano photo doesn't exist.");
-		this.actions.moveToElement(this.item.getThirdPianoPhoto()).build().perform();
-		Thread.sleep(1000);
-
-		waiter.until(ExpectedConditions.visibilityOf(this.item.getThirdFavorite()));
-
-		heart = this.item.getThirdFavorite().isDisplayed();
-		Assert.assertTrue(heart);
-		Thread.sleep(1000);
-
-		this.item.getThirdFavorite().click();
-		Thread.sleep(2000);
-
 //		Click on the "Add to list" button
 		waiter.until(ExpectedConditions.visibilityOf(this.item.getAddToList()));
 
